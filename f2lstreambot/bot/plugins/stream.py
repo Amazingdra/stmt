@@ -69,9 +69,9 @@ async def media_receive_handler(_, m: Message):
     fln = log_msg.video.file_name
     out = f"https://link.playdisk.xyz/st?api=1cb40bcf2199038e39da5fe338a1f00f71c0911c&url={sl}"
     await m.reply_text(
-        text=f"**File Name:** `{fln}`\n\n**Streaming Link:** {out}\n\n`©️Powered by` @playdisk_xyz",
+        text=f"**File Name:** `{fln}`\n\n**direct / Streaming Link:** {out}\n\n`©️Powered by` @playdisk_xyz",
         quote=True,
-        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('Stream/download Now🤗', url=out)]])
+        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('playit link🤗', url=f"https://playit.playdisk.xyz/api?api=2b6a764deb2bac2525c7b7764e8793e15baa516a&url={sl}")]])
     )
 
 @PdiskBot.on_message(filters.channel & (filters.document | filters.video))

@@ -37,7 +37,7 @@ async def media_receive_handler(_, m: Message):
     sl = Var.URL + str(log_msg.message_id)
     fln = log_msg.document.file_name
     out = f"https://link.playdisk.xyz/st?api=1cb40bcf2199038e39da5fe338a1f00f71c0911c&url={sl}"
-    playit = f"https://playit.playdisk.xyz/api?api=2b6a764deb2bac2525c7b7764e8793e15baa516a&url={sl}"
+    playit = f"https://playit.playdisk.xyz/st?api=2b6a764deb2bac2525c7b7764e8793e15baa516a&url={sl}"
     await m.reply_text(
         text=f"**File Name:** `{fln}`\n\n**Streaming Link:** {out}\n\n`©️Powered by` @playdisk_xyz",
         quote=True,

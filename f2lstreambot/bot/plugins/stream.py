@@ -16,7 +16,7 @@ from pyrogram.errors import UserNotParticipant, UserBannedInChannel
 @PdiskBot.on_message(filters.private & filters.document)
 async def media_receive_handler(_, m: Message):
     try:
-        member = await PdiskBot.get_chat_member("@playdisk_xyz", m.chat.id)
+        member = await PdiskBot.get_chat_member("@A2z_tech", m.chat.id)
         if member.status == "kicked":
             await m.reply_text("Sorry mate!  You're  B A N N E D 🥱", quote=True)
             return
@@ -25,7 +25,7 @@ async def media_receive_handler(_, m: Message):
         await m.reply_text("You Need To Join Our Channel to perform that operatioN👻.\n\n@playdisk_xyz",
                                 reply_markup=InlineKeyboardMarkup(
                                     [[InlineKeyboardButton(text="🤗 Join Channel 🤗",
-                                                                       url="https://t.me/playdisk_xyz")]]))
+                                                                       url="https://telegram.me/A2z_tech")]]))
         return
         
     except Exception:
@@ -39,7 +39,7 @@ async def media_receive_handler(_, m: Message):
     out = f"https://video.shorturllink.in/st?api=cd7423bd30f972c73970d66fbcc2055c5ec2b65a&url={sl}"
     playit = f"https://playit.playdisk.xyz/st?api=2b6a764deb2bac2525c7b7764e8793e15baa516a&url={sl}"
     await m.reply_text(
-        text=f"**File Name:** {fln}\n\n**Streaming / Download Link:** {out}\n\n©️Powered by @playdisk_xyz \n\n playit link 👇",
+        text=f"**File Name:** {fln}\n\n**Streaming / Download Link:** {out}\n\n©️Powered by @A2z_tech \n\n playit link 👇",
         quote=True,
         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('playit link🤗', url=playit)]])
     )
@@ -48,16 +48,16 @@ async def media_receive_handler(_, m: Message):
 @PdiskBot.on_message(filters.private & filters.video)
 async def media_receive_handler(_, m: Message):
     try:
-        member = await PdiskBot.get_chat_member("@playdisk_xyz", m.chat.id)
+        member = await PdiskBot.get_chat_member("@A2z_tech", m.chat.id)
         if member.status == "kicked":
             await m.reply_text("Sorry mate!  You're  B A N N E D 🥱", quote=True)
             return
         
     except UserNotParticipant:
-        await m.reply_text("You Need To Join Our Channel to perform that operatioN👻.\n\n@playdisk_xyz",
+        await m.reply_text("You Need To Join Our Channel to perform that operatioN👻.\n\n@A2z_tech",
                                 reply_markup=InlineKeyboardMarkup(
                                     [[InlineKeyboardButton(text="🤗 Join Channel 🤗",
-                                                                       url="https://t.me/playdisk_xyz")]]))
+                                                                       url="https://telegram.me/A2z_tech")]]))
         return
         
     except Exception:
@@ -71,7 +71,7 @@ async def media_receive_handler(_, m: Message):
     out = f"https://video.shorturllink.in/st?api=cd7423bd30f972c73970d66fbcc2055c5ec2b65a&url={sl}"
     playit = f"https://playit.playdisk.xyz/st?api=2b6a764deb2bac2525c7b7764e8793e15baa516a&url={sl}"
     await m.reply_text(
-        text=f"**File Name:** {fln}\n\n**Streaming / Direct Download Link👇🏿** {out}\n\n©️Powered by @playdisk_xyz \n\n playit link 👇",
+        text=f"**File Name:** {fln}\n\n**Streaming / Direct Download Link👇🏿** {out}\n\n©️Powered by @A2z_tech \n\n playit link 👇",
         quote=True,
         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('playit link🤗', url=playit)]])
     )

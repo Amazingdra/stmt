@@ -77,6 +77,6 @@ Send me any TELEGRAM file, I'll generate instant stream/download link for you!
 
 NB: You Need To Join Our Channel to Use This BoT..
 
-©️Powered By @playdisk_xyz""", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="⭕️ CHANNEL ⭕️", url="https://telegram.me/A2z_tech")], [InlineKeyboardButton(text="😇 SUPPORT", url="https://t.me/joinchat/nydQ9TrIeX01N2M1"),
-                                                    InlineKeyboardButton(text="SHARE ♐️", url="https://t.me/share/url?url=%2A%2AHai%20%E2%9D%A4%EF%B8%8F%2C%2A%2A%0A%0A__Today%20i%20just%20found%20out%20an%20intresting%20and%20powerful__%20%2A%2AStreaming/Downloadable%20Link%20Generator%20Bot%2A%2A%20__for%20free%F0%9F%A5%B0.%20%0ACheck%20out%20%F0%9F%98%8B..__%0A%0A%2A%2ABot%20link%20%3A%20%40file_to_watch_or_download_bot%20%F0%9F%94%A5%2A%2A%0A%0A%60%C2%A9Powered%20by%60%20%40playdisk_xyz")]])
+©️Powered By @A2z_tech""", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="⭕️ CHANNEL ⭕️", url="https://telegram.me/A2z_tech")], [InlineKeyboardButton(text="😇 SUPPORT", url="https://t.me/joinchat/nydQ9TrIeX01N2M1"),
+                                                    InlineKeyboardButton(text="SHARE ♐️", url="https://t.me/share/url?url=%2A%2AHai%20%E2%9D%A4%EF%B8%8F%2C%2A%2A%0A%0A__Today%20i%20just%20found%20out%20an%20intresting%20and%20powerful__%20%2A%2AStreaming/Downloadable%20Link%20Generator%20Bot%2A%2A%20__for%20free%F0%9F%A5%B0.%20%0ACheck%20out%20%F0%9F%98%8B..__%0A%0A%2A%2ABot%20link%20%3A%20%40file_to_watch_or_download_bot%20%F0%9F%94%A5%2A%2A%0A%0A%60%C2%A9Powered%20by%60%20%40A2z_tech")]])
         )

@@ -107,3 +107,7 @@ async def dllivegram(_, m: Message):
 @PdiskBot.on_message(filters.regex("You cannot forward someone else's messages."))
 async def dlfrwdlg(_, m: Message):
     await m.delete()
+    
+@PdiskBot.on_message(filters.regex("@FleepBot"))
+async def dllivegram(_, m: Message):
+    await m.delete()

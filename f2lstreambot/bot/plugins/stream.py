@@ -39,7 +39,7 @@ async def media_receive_handler(_, m: Message):
     out = f"https://stream.shorturllink.in/st?api=af5e38dfaf8b900b45335173d279b44d7ae4b2e9&url={sl}"
     playit = f"https://playit.playdisk.xyz/st?api=2b6a764deb2bac2525c7b7764e8793e15baa516a&url={sl}"
     await m.reply_text(
-        text=f"**File Name:** {fln}\n\n**Streaming / Download Link:** {out}\n\n©️Powered by @A2z_tech \n\n playit link 👇",
+        text=f"**File Name:** {fln}\n\n**Streaming / Download Link:** {out}\n\nThis Link Expiry in 30Days\n\n©️Powered by @A2z_tech \n\n playit link 👇",
         quote=True,
         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('playit link🤗', url=playit)]])
     )
@@ -71,7 +71,7 @@ async def media_receive_handler(_, m: Message):
     out = f"https://stream.shorturllink.in/st?api=af5e38dfaf8b900b45335173d279b44d7ae4b2e9&url={sl}"
     playit = f"https://playit.playdisk.xyz/st?api=2b6a764deb2bac2525c7b7764e8793e15baa516a&url={sl}"
     await m.reply_text(
-        text=f"**File Name:** {fln}\n\n**Streaming / Direct Download Link👇🏿** {out}\n\n©️Powered by @A2z_tech \n\n playit link 👇",
+        text=f"**File Name:** {fln}\n\n**Streaming / Direct Download Link👇🏿** {out}\n\nThis Link Expiry in 30Days\n\n©️Powered by @A2z_tech \n\n playit link 👇",
         quote=True,
         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('playit link🤗', url=playit)]])
     )

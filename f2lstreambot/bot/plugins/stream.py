@@ -11,11 +11,6 @@ from f2lstreambot.vars import Var
 from pyrogram import  filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.errors import UserNotParticipant, UserBannedInChannel
-from pyrogram import filters
-from WebStreamer.vars import Var
-from urllib.parse import quote_plus
-from WebStreamer.bot import StreamBot
-from pyrogram.types.messages_and_media import message
 
 
 

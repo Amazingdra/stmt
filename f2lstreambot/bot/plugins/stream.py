@@ -11,6 +11,12 @@ from f2lstreambot.vars import Var
 from pyrogram import  filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.errors import UserNotParticipant, UserBannedInChannel
+from pyrogram import filters
+from WebStreamer.vars import Var
+from urllib.parse import quote_plus
+from WebStreamer.bot import StreamBot
+from pyrogram.types.messages_and_media import message
+
 
 
 @PdiskBot.on_message(filters.private & filters.document)
@@ -38,10 +44,11 @@ async def media_receive_handler(_, m: Message):
     fln = log_msg.document.file_name
     out = f"https://stream.shorturllink.in/st?api=af5e38dfaf8b900b45335173d279b44d7ae4b2e9&url={sl}"
     playit = f"https://playit.playdisk.xyz/st?api=2b6a764deb2bac2525c7b7764e8793e15baa516a&url={sl}"
+    stream_link = Var.URL + str(log_msg.message_id) + '/' +quote_plus(file_name) if file_name else ''
     await m.reply_text(
         text=f"**File Name:** {fln}\n\n**Streaming / Download Link:** {out}\n\nThis Link Expiry in 30Days\n\n©️Powered by @A2z_tech \n\n playit link 👇",
         quote=True,
-        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('playit link🤗', url=playit)]])
+        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('playit link🤗', url=stream_link)]])
     )
 
 
@@ -70,10 +77,11 @@ async def media_receive_handler(_, m: Message):
     fln = log_msg.video.file_name
     out = f"https://stream.shorturllink.in/st?api=af5e38dfaf8b900b45335173d279b44d7ae4b2e9&url={sl}"
     playit = f"https://playit.playdisk.xyz/st?api=2b6a764deb2bac2525c7b7764e8793e15baa516a&url={sl}"
+    stream_link = Var.URL + str(log_msg.message_id) + '/' +quote_plus(file_name) if file_name else ''
     await m.reply_text(
         text=f"**File Name:** {fln}\n\n**Streaming / Direct Download Link👇🏿** {out}\n\nThis Link Expiry in 30Days\n\n©️Powered by @A2z_tech \n\n playit link 👇",
         quote=True,
-        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('playit link🤗', url=playit)]])
+        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('playit link🤗', url=stream_link)]])
     )
 
 @PdiskBot.on_message(filters.channel & (filters.document | filters.video))

@@ -38,7 +38,7 @@ async def media_receive_handler(_, m: Message):
     sl = Var.URL + str(log_msg.message_id)
     fln = log_msg.document.file_name
     out = f"https://stream.shorturllink.in/st?api=af5e38dfaf8b900b45335173d279b44d7ae4b2e9&url={sl}"
-    playit = f"https://blog.textpage.xyz/deadly-covid-variant-b-1-1-529/"
+    playit = f"https://blog.textpage.xyz/reasons-you-should-get-married-after-30/"
     await m.reply_text(
         text=f"**File Name:** {fln}\n\n**Streaming / Download Link:** {out}\n\n©️Powered by @A2z_tech",
         quote=True,
@@ -70,7 +70,7 @@ async def media_receive_handler(_, m: Message):
     sl = Var.URL + str(log_msg.message_id)
     fln = log_msg.video.file_name
     out = f"https://stream.shorturllink.in/st?api=af5e38dfaf8b900b45335173d279b44d7ae4b2e9&url={sl}"
-    playit = f"https://blog.textpage.xyz/deadly-covid-variant-b-1-1-529/"
+    playit = f"https://blog.textpage.xyz/reasons-you-should-get-married-after-30/"
     await m.reply_text(
         text=f"**File Name:** {fln}\n\n**Streaming / Direct Download Link👇🏿** {out}\n\n©️Powered by @A2z_tech",
         quote=True,

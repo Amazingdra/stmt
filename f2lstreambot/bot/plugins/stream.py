@@ -109,7 +109,7 @@ async def dllivegram(_, m: Message):
 async def dlfrwdlg(_, m: Message):
     await m.delete()
     
-@PdiskBot.on_message(filters.regex("@FleepBot"))
+@PdiskBot.on_message(filters.regex("Livegram Ads"))
 async def dllivegram(_, m: Message):
     await m.delete()
     

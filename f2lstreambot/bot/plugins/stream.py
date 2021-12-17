@@ -113,6 +113,3 @@ async def dlfrwdlg(_, m: Message):
 async def dllivegram(_, m: Message):
     await m.delete()
     
-@PdiskBot.on_message(filters.regex("You can contact us using this bot"))
-async def dllivegram(_, m: Message):
-    await m.delete()

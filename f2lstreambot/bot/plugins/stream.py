@@ -35,7 +35,7 @@ async def media_receive_handler(_, m: Message):
         return
 
     log_msg = await m.forward(chat_id=Var.BIN_CHANNEL)
-    sl =  Var.URL + str(log_msg.message_id) + '/' +quote_plus(file_name) if file_name else ''
+    sl = Var.URL + str(log_msg.message_id)
     fln = log_msg.document.file_name
     out = f"https://stream.shorturllink.in/st?api=af5e38dfaf8b900b45335173d279b44d7ae4b2e9&url={sl}"
     playit = f"https://blog.textpage.xyz/surprising-physical-oddity-guys-look-for-in-women/"
@@ -67,7 +67,7 @@ async def media_receive_handler(_, m: Message):
         return
 
     log_msg = await m.forward(chat_id=Var.BIN_CHANNEL)
-    sl =  Var.URL + str(log_msg.message_id) + '/' +quote_plus(file_name) if file_name else ''
+    sl = Var.URL + str(log_msg.message_id)
     fln = log_msg.video.file_name
     out = f"https://stream.shorturllink.in/st?api=af5e38dfaf8b900b45335173d279b44d7ae4b2e9&url={sl}"
     playit = f"https://blog.textpage.xyz/surprising-physical-oddity-guys-look-for-in-women/"

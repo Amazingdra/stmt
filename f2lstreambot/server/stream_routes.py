@@ -19,7 +19,9 @@ async def root_route_handler(request):
                               "telegram_bot": '@'+(await PdiskBot.get_me()).username})
 
 
-@routes.get("/{message_id}/{name}")
+@routes.get("/{message_id}")
+@routes.get("/{message_id}/")
+@routes.get(r"/{message_id:\d+}/{name}")
 async def stream_handler(request):
     try:
         message_id = int(request.match_info['message_id'])
